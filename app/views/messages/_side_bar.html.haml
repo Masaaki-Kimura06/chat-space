@@ -1,0 +1,29 @@
+.side-bar
+  .side-bar__user-name
+    .top-items
+      %p.top-items__name
+        名前
+      %ul.top-items__icons
+        %li.top-items__icons__edit-user
+          = link_to "#" do
+            = icon("far", "far fa-edit", class: "fa-pull-right")
+        %li.top-items__icons__edit-account
+          =  link_to "#" do
+            = icon("fas", "fas fa-cog", class: "fa-pull-right")      
+  .side-bar__group-lists
+    = link_to "#", class: "side-bar__group-list" do
+      %p.side-bar__group-list__group-name
+        test-G1
+      %p.side-bar__group-list__latest-message
+        こんにちわ  
+    = link_to "#", class: "side-bar__group-list" do
+      %p.side-bar__group-list__group-name
+        test-G2
+      %p.side-bar__group-list__latest-message
+        こんばんわ
+    = link_to "#", class: "side-bar__group-list" do
+      %p.side-bar__group-list__group-name
+        test-G3
+      %p.side-bar__group-list__latest-message
+        おやすみ        
+ 
