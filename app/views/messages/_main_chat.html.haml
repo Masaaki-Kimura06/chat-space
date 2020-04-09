@@ -1,0 +1,41 @@
+.wrapper
+
+.chat-main
+  .chat-main__group-info
+    .chat-main__group-info__left-box
+      %p.chat-main__group-info__left-box__current-group
+        test1
+      %p.chat-main__group-info__left-box__member-lists 
+        Member: 木村
+    .chat-main__group-info__edit-box
+      = link_to "#" do
+        Edit
+        
+  .chat-main__message-list
+    %span.chat-main__message-list__name
+      木村
+    %span.chat-main__message-list__date
+      2019/11/20(wed) 17:43:01
+    %p.chat-main__message-list__text
+      こんにちわ
+    %span.chat-main__message-list__name
+      佐藤
+    %span.chat-main__message-list__date
+      2019/11/20(wed) 17:43:01
+    %p.chat-main__message-list__text
+      こんばんは
+    %span.chat-main__message-list__name
+      マイケル
+    %span.chat-main__message-list__date
+      2019/11/20(wed) 17:43:01
+    %p.chat-main__message-list__text
+      good night!
+
+  .chat-main__message-form
+    %form.new-message
+      .input-box
+        %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          = icon("fas", "image")
+          %input{type: "file", class: "input-box__image__file"}
+      %input{type: "submit", class: "submit-btn", value: "Send"}
