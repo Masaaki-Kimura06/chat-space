@@ -44,9 +44,6 @@
     height: calc(100vh - 100px);
     padding: 20px;
     .side-bar__group-list {
-      display: block;
-      color: $MainWhiteColor;
-      text-decoration: none;
       padding-bottom: 40px;
       &__group-name {
         font-size: 15px;
@@ -54,6 +51,10 @@
       }
       &__latest-message {
         font-size: 11px;
+      }
+      a {
+      text-decoration: none; 
+      color: $MainWhiteColor;
       }
     }
   }
