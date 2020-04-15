@@ -14,6 +14,7 @@ module ChatSpace
     g.helper false
     g.test_framework false
   end
+  config.action_view.field_error_proc = Proc.new { |html_tag, instance| html_tag }
   config.i18n.default_locale = :ja
  end
 end

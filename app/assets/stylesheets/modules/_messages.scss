@@ -61,7 +61,7 @@
 }
 
 .chat-main {
-  height: 100vh;
+  height: 100;
   width: calc(100vw - 300px);
   &__group-info {
     background-color: $MainWhiteColor;
@@ -99,6 +99,7 @@
   &__message-list {
     background-color: #fafafa;
     height: calc(100vh - 100px - 90px);
+    overflow: scroll;
     padding:35px 40px;
     &__name {
       color: $MainDarkColor;
@@ -113,6 +114,9 @@
     &__text {
       color: $SubDarkColor;
       font-size: 14px;
+      margin: 12px 0 46px 0;
+    }
+    &__image {
       margin: 12px 0 46px 0;
     }
 
